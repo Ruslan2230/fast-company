@@ -1,5 +1,4 @@
-import { professionsObject as professions } from "./profession.api";
-
+import { professionsObject as professions } from "./professions.api";
 const qualities = {
     tedious: {
         _id: "67rdca3eeb7f6fgeed471198",
@@ -144,7 +143,7 @@ const users = [
     }
 ];
 
-export const fetchAll = () =>
+const fetchAll = () =>
     new Promise((resolve) => {
         window.setTimeout(() => {
             resolve(users);
